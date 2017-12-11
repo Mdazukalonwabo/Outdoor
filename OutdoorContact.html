@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OutdoorGallary</title>
+    <link rel="stylesheet" type="text/css" href="Outdoor.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Oswald|Passion+One" rel="stylesheet">
+    <style>
+
+/*html document given a background color*/
+      html{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPGP0laSLkWyRcFlQviZRq58w4nyD_oCWy6fWbj7Vv8yICPIKo");
+      }
+/*ends*/
+
+/*body given height and a background-color*/
+      body{
+        height: 600px;
+        background-color: white;
+      }
+/*ends*/
+
+/*header given a sutable height*/
+      header{
+        height: 40%;
+      }
+/*ends*/
+
+/*nav bar aligned to the center with no margin on top/bottom and inserted on the right and left*/
+      #id{
+        align-content: center;
+        margin: 0 250px;
+      }
+/*ends*/
+
+    </style>
+  </head>
+  <body>
+
+<!-- header with the main heading and the main navbar placed within -->
+    <header>
+      <h1>a World yet to be explored</h1>
+      <nav  id="mainNav">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="OutdoorGallary.html">Gallary</a></li>
+        <li><a href="OutdoorContact.html">Contact</a></li>
+      </nav>
+    </header>
+<!-- ends-->
+
+<!-- section with the form placed with a table for structure and consistancy -->
+    <section id="address">
+
+      <form class="find" align-self="center">
+        <table>
+          <tr>
+            <td>NAME:</td>
+            <td><input type="Name" name="Name" value=""></td><br>
+          </tr>
+
+          <tr>
+            <td>SURNAME:</td>
+            <td><input type="Name" name="Surname" value=""></td><br>
+          </tr>
+
+          <tr>
+            <td>E-Mail: </td>
+            <td><input type="email" name="Email" value=""></td><br>
+          </tr>
+
+          <tr>
+            <td>Male:<input type="checkbox" name="men" value="gender"></td>
+            <td>Female:<input type="checkbox" name="women" value="gender"></td><br>
+          </tr>
+
+          <tr>
+            <td>Comment: </td>
+            <td><textarea rows="4" cols="50" name="comment" form="usrform"></textarea></td><br>
+          </tr>
+
+          <tr>
+            <td><input type="submit" name="Send" value="Send"> </td>
+            <td><input type="reset" name="Clear" value="Reset"></td><br>
+          </tr>
+        </table>
+      </form>
+  <!-- ends -->
+    </section>
+
+  </body>
+</html>

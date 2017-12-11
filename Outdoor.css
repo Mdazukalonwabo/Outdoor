@@ -1,0 +1,87 @@
+/*html document given a background color and margin included*/
+html{
+  margin: 5px 50px;
+  background-color: black;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPGP0laSLkWyRcFlQviZRq58w4nyD_oCWy6fWbj7Vv8yICPIKo");
+}
+/*ends*/
+h1{
+  font-family: 'Passion One', cursive;
+}
+
+h2{
+  font-family: 'Oswald', sans-serif;
+}
+/*body given a background color and margin included*/
+body{
+  background-color: white;
+
+}
+/*ends*/
+H1{
+  color: black;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  font-size: 50px;
+}
+/*header given a backgro200 image that covers whole area of header adding effect to blends with webpage color, width , height and text placed in center and margin included */
+header{
+    background-image: linear-gradient(to bottom, black 0%,white 100%), url("https://cdnblog.picsart.com/2016/11/feathured-1-585x390.jpg");
+    background-blend-mode: screen;
+    background-size: cover;
+    width: 1235px;
+    height: 20%;
+    align-content: center;
+    margin-right: 14px;
+}
+/*ends*/
+
+/*mainnav of website with auto height to match header, automated margin removed, and bullets on list also removed*/
+#mainNav{
+  align-self: center;
+   margin: 0px;
+   padding: 60px;
+   list-style: none;
+   height: 100px;
+}
+/*ends*/
+
+/*mainNav list go (right to left), width, transparance add, height distance and text placed in middle and font included aswell as margins*/
+  #mainNav li{
+    float: left;
+    width: auto;
+    opacity: 0.8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px 2px 0px 25px;
+  }
+/*ends*/
+
+/*items underliner removed, color added*/
+    #mainNav li a{
+      text-decoration: none;
+      color: rgb(158, 214, 214);
+      display: block;
+      font-family: 'Francois One', sans-serif;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+/*ends*/
+
+/*items given a hover function with a color*/
+    #mainNav li a:hover{
+      color: rgb(195, 165, 229);
+      text-decoration: underline;
+      font-size: 40px;
+    }
+/*ends*/
+
+/*targeting the footer within the grid tellinng it to obtain both the fist and second column on the third row*/
+        footer{
+          background-color: purple;
+          height: 100px;
+          margin-right: 14px;
+        }
+/*ends*/

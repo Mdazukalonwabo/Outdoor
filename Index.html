@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OutdoorProject</title>
+    <link rel="stylesheet" type="text/css" href="Outdoor.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Oswald|Anton|Passion+One" rel="stylesheet">
+    <style>
+
+/*sidebar placed on left given a margin right and left, bullets and padding removed, transparancey added and a background color */
+    .sidenavbar{
+          MARGIN: 0 15PX;
+          list-style-type: none;
+          padding: 0px;
+          opacity: 0.8;
+          background-color: rgb(101, 206, 152);
+    }
+/*ends*/
+
+/*sidenavbar heading given width, background color, margin removed, solid border with raduis added*/
+    .sidenavbar > h3{
+      width: auto;
+      background-color: rgb(104, 137, 120);
+      margin: 0;
+      border: 2px solid black;
+      border-radius: 10%;
+    }
+/*ends*/
+
+/*sidenavbar list given width height, text placed in center, space between paragraph defined and fontsize included, spacing accordingly*/
+    .sidenavbar li{
+      width: auto;
+      height: 80px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 15px;
+      padding-top: 15px;
+    }
+/*ends*/
+
+/*sidenavbar items under liner removed and text given a color*/
+    .sidenavbar li a{
+      text-decoration: none;
+      color: rgb(0, 12, 255);
+    }
+/*ends*/
+    .sidenavbar li a:visited{
+      color: black;
+      text-decoration: underline;
+    }
+
+
+/*sidenavbar items given hover function so that when on text color is displayed as well as words underlined*/
+    .sidenavbar li a:hover{
+      color: rgb(191, 0, 255);
+      text-decoration: underline;
+    }
+/*ends*/
+    .sidenavbar li a:active{
+      color: rgb(255, 89, 0));
+      text-decoration: underline;
+}
+
+
+  /*main grid of webpage with a width, height and given two columns as well as rows, gap to sparate the columns from the rows*/
+        .Grid{
+          display: grid;
+          width: 100%;
+          height: 7000px;
+          grid-template-columns: 20% 80%;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-gap: 1vw;
+          margin:0;
+          background-color: white;
+        }
+  /*ends*/
+
+/*targeting the header within the grid tellinng it to obtain both columns on the first row*/
+        .Grid> header{
+          grid-column: 1 /span 2;
+          grid-row: 1;
+        }
+/*ends*/
+
+/*targeting the sidenavbar within the grid tellinng it to obtain the fist column on the Second row*/
+        .Grid > .sidenavbar{
+          grid-column: 1;
+          grid-row: 2;
+          width: 100%;
+        }
+/*ends*/
+
+/*targeting the HCFC within the grid tellinng it to obtain the second column on the Second row*/
+      .Grid > .HCFC{
+          grid-column: 2;
+          grid-row: 2;
+
+        }
+
+      .Grid > .Activites{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+      }
+/*ends*/
+
+/*Main topic images with links, with 2 columns and rows grid-gap also added for space */
+        .HCFC{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-gap: 2vw;
+          align-content: center;
+          margin: 0 30px;
+  }
+/*ends*/
+
+        .imgs.1{
+          border: 2px solid black;
+        }
+
+
+/*linking imgs for the article and their content, width and height given to imgs and made to have a circlur look and placed in the center*/
+      #imgs {
+        width: 231px;
+        height: 180px;
+        border-radius: 50px;
+      }
+/*ends*/
+
+/*activites/detailed, placed in 2 columns and 4 rows*/
+        .Activites {
+          margin: 10px 14px 0 0;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat{4, 1fr};
+        }
+/*ends*/
+
+/*h3 of articles placed to the center and margin and padding removed*/
+          .Activites > h3{
+          text-align: center;
+          margin: 0px;
+          padding: 0;
+          color: REd;
+          height: 80%;
+        }
+/*ends*/
+
+/*divs placed within the Activites class and given background color, for  */
+          .places{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: 1fr;
+          grid-gap: 2vw;
+          margin: 0px;
+          padding: 0;
+
+        }
+/*ends*/
+
+/*div places item placed in there respective column and row*/
+        .places > .a{
+          grid-column: 1;
+          grid-row: 1;
+        }
+
+        .places > .b{
+          grid-column: 2;
+          grid-row: 1;
+        }
+
+        .places > .c{
+          grid-column: 3;
+          grid-row: 1;
+        }
+
+        .places > .d{
+          grid-column: 4;
+          grid-row: 1;
+        }
+/*ends*/
+
+/*articles placed in 1 column and two rows with a width*/
+        .articles{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          width: auto;
+        }
+/*ends*/
+
+/*images and paragrapgh placed in respectful location*/
+        .articles > .Pimgs{
+          grid-column: 1;
+          grid-row: 1;
+        }
+
+/*ends*/
+
+/*id images styled width and height given as well as margin */
+        #imgH{
+          width: 350px;
+          height: 250px;
+          margin-left: 25px;
+          box-shadow: 5px 15px grey;
+        }
+/*ends*/
+
+/*footer placed within the grid in first column but cross over to 2nd on the 4th row*/
+        .Grid > footer{
+          grid-column: 1 / span 2;
+          grid-row: 4;
+        }
+/*end*/
+/*editing the width and height*/
+      #maps{
+        height: 250px;
+        width: 350px;
+      }
+/*ends*/
+
+
+    </style>
+  </head>
+  <body>
+
+<!-- main grid begins here-->
+    <div class="Grid">
+
+<!-- nav bar placed within header styling done on external css sheet-->
+      <header>
+        <h1>a World yet to be explored</h1>
+        <hr>
+        <nav  id="mainNav">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="OutdoorGallary.html">Gallary</a></li>
+          <li><a href="OutdoorContact.html">Contact</a></li>
+        </nav>
+      </header>
+<!-- ends here -->
+
+<!-- sidebar with links to related website that will be of interest to browers -->
+          <div class="sidenavbar">
+            <h3>Other Relevent sites</h3>
+              <li><a href="https://insideguide.co.za/cape-town/best-hikes-in-cape-town/" target="_blank">The Best Hikes in Cape Town</a></li>
+              <li><a href="https://www.sa-venues.com/things-to-do/westerncape/category/fishing/" target="_blank">SA-Venues</a></li>
+              <li><a href="http://viljoenmariusj.withtank.com/newspaper-and-magazine-articles/five-easy-to-reach-fishing-spots-within-150km-from-cape-town/" target="_blank">5 Fishing Spots within 150km from Cape Town</a></li>
+              <li><a href="https://insideguide.co.za/cape-town/camping-sites-cape-town/" target="_blank">Camping Sites in the Cape</a></li>
+              <li><a href="http://www.climbing.co.za/wiki/Western_Cape" target="_blank">Climb ZA</a></li>
+          </div>
+<!-- ends -->
+
+<!-- images as well as links to the various outdoor activites done by the client-->
+          <section class="HCFC">
+
+              <div class="imgs.1">
+                <a href="#Hike1"><img src="Images\matic-kozinc-112830.jpg" alt="Hiking" id="imgs"></a>
+                <!-- code added to give credit to photographa -->
+                <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@mtckznc?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Matic Kozinc"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Matic Kozinc</span></a>
+                <!-- ends -->
+                  <h2>Hiking</h2>
+
+              </div>
+
+              <div class="imgs.1">
+                  <a href="#Climb1"><img src="Images\vincenzo-di-giorgi-5121.jpg" alt="climbing" id="imgs"></a>
+                  <!-- code added to give credit to photographa -->
+                  <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@tlisbin?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Tommy Lisbin"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Tommy Lisbin</span></a>
+                  <!-- ends -->
+
+                  <h2>Climbing</h2>
+
+              </div>
+
+              <div class="imgs.1">
+                <a href="#Camp1"><img src="Images\tommy-lisbin-211935.jpg" alt="Camping" id="imgs"></a>
+                <!-- code added to give credit to photographa -->
+                <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@vincenzodg?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from vincenzo di giorgi"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">vincenzo di giorgi</span></a>
+                <!-- ends -->
+                  <h2>Camping</h2>
+
+              </div>
+
+              <div class="imgs.1">
+                <!-- code added to give credit to photographa -->
+                <a href="#Fish1"><img src="Images\alan-bishop-49711.jpg" alt="Fishing" id="imgs"></a>
+                <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@ravenwolfab?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Alan Bishop"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Alan Bishop</span></a>
+<!-- ends -->
+                  <h2>Fishing</h2>
+              </div>
+
+          </section>
+<!-- ends-->
+
+        <section class="Activites">
+            <a name="Hike1"></a>
+            <h3 id="hike">Hiking</h3>
+          <div class="places">
+
+                <div class="articles">
+                    <div class="Pimgs">
+                      <h4>Right face arrow face traverse</h4>
+                    <img src="https://i2.wp.com/www.cape-hike.co.za/wp-content/uploads/2011/02/traverse-cracks.jpg?zoom=2&resize=800%2C445" alt="Right face arrow face traverse" id="imgH">
+
+                    <p>"This route goes up the fabulous India—Venster Route, follows a spectacular traverse on the face of Table Mountain, and then descends steeply down Yellowstone Gully: not for the faint-hearted! If you were even slightly out of your comfort zone on the India—Venster scrambles, don’t proceed!"</p>
+
+                  <h4>Directions</h4>
+
+                    <p>Start out your route by following the instructions for the India—Venster Route. When you have passed through the scrambles, and are standing directly below the Upper Cableway Station, you are ready to make your detour onto the face of the mountain!</p>
+                    <p>you will notice 3 bushy ledges, or traverses, across the face of Table Mountain. You are more-or-less level with the middle one, called Africa Ledge, but will be heading down slightly to the lower one, the Right Face — Arrow Face Traverse.
+                  </div>
+                </div>
+
+                <div class="articles">
+
+                  <div class="Pimgs">
+                    <h4>TRANQUILITY CRACKS HIKE</h4>
+                  <img src="https://www.sa-venues.com/things-to-do/westerncape/gallery/4468/1.jpg" alt="Tranquility" id="imgH">
+
+                  <p>Tranquility Cracks refers directly to deep fissures in the rocks above Camps Bay through which one passes, about halfway along the Twelve Apostles. Beyond the cracks is a labyrinth of rocky corridors.
+
+                    There are a number of passages to choose from, all of which offer incredible views. Inside the cracks grow yellowwood trees that have earned the hike the alternative title of Yellowwood Cracks. Here you are sheltered from any wind and sun.</p>
+
+                <h4>Directions</h4>
+
+                  <p><b>Start:</b> the Pipe Track above Camps Bay, take Corridor Ravine to the top of the mountain
+                    <strong>Finish:</strong> the Pipe Track
+                    <u>Duration:</u> roughly 5 hours, depending on your level of fitness
+                    <em>Fitness:</em> moderate to very fit
+                    Our tip: the feeling of remoteness and the ancient rock formations are something for which one is unprepared</p>
+                  </div>
+                </div>
+
+                <div class="articles">
+                  <div class="Pimgs">
+                    <h4>Wittels</h4>
+                  <img src="https://www.sa-venues.com/things-to-do/westerncape/gallery/4468/1.jpg" alt="Tranquility" id="imgH">
+                  </div>
+
+                  <div class="para">
+                      <p>"Perhaps the most daunting hike in the Western Cape for any trout angler (or hiker), this gorge demands respect and is recommended only for the advanced adventure fly-fisherman. The lower valley is accessed from Mitchel’s pass below Ceres. It would be wise to arrange a drop and pick-up rather than leave a vehicle parked next to the road. Cover the first three hours of the hike on a footpath until a large pool with a big boulder in the head (Boulder Pool) is reached. Cross the high bank on the right and set up camp on the gravel bed next to the slender pool just upstream of Boulder Pool. A good day’s fishing lies upstream from here to the next camp, Stony Camp. Packing in a small daypack to carry the bare minimum (camera and food) while fishing will allow you to cover water quicker and you will spook fewer trout. The norm is to take a stiff walk back to the previous camp and carry the heavy packs to the next camp before sunset."</p>
+
+                    <h4>Directions</h4>
+
+                      <p>Start out your route by following the instructions for the India—Venster Route. When you have passed through the scrambles, and are standing directly below the Upper Cableway Station, you are ready to make your detour onto the face of the mountain!</p>
+                      <p>you will notice 3 bushy ledges, or traverses, across the face of Table Mountain. You are more-or-less level with the middle one, called Africa Ledge, but will be heading down slightly to the lower one, the Right Face — Arrow Face Traverse.</p>
+                </div>
+
+                </div>
+
+                <div class="articles">4</div>
+          </div>
+
+              <a name="Climb1"></a>
+            <h3>Climbing</h3>
+          <div class="places">
+
+                <div class="articles">
+                    <div class="Pimgs">
+                      <h4>Silvermines climbing</h4>
+                      <img src="Images\Silvermine-Cape-Town-Bouldering.jpg" alt="Right face arrow face traverse" id="imgH">
+                    </div>
+
+                    <div class="para">
+                        <p>"Silvermine is probably the most popular climbing area on the Cape Peninsula with short walk-ins, good rock quality and many excellent routes. Silvermine has five different crags and over 80 routes with grades ranging from 13 to 28. The crags go into the shade in the early afternoon. The Lower Silvermine Crag has easy routes and is perfect for beginners, Blaze of Glory is a little harder, Silvermine Main Crag is a good all round crag and Fawlty Towers for some harder stuff. The most recent addition is Silverminor Crag.</p>
+
+                        <h4>Directions</h4>
+
+                        <p>From Cape Town, take Ou Kaapse Weg towards Noordhoek. Once on top of the mountain turn right into the Silvermine Reserve. There is an entrance fee of R45.00 to get into the reserve (January 2016). A Wild card also gets you in. Visitors to South Africa can also take advantage of the Wild cards.</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d105758.26709507605!2d18.33247527527814!3d-34.07090243402186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1dcc6a203f08cec9%3A0x7b38efad35f69c56!2sSilvermine+Main+Crag%2C+Hout+Bay%2C+Cape+Town!3m2!1d-34.0709223!2d18.4025154!5e0!3m2!1sen!2sza!4v1505560683562" id="maps"></iframe>
+                      </div>
+                </div>
+
+                <div class="articles">
+                  <div class="Pimgs">
+                    <h4>Rocklands</h4>
+                    <img src="Images\rocklands-youth_01-nlefbd2omuhkef6x7t8beuds.jpg" alt="climbing" id="imgH">
+                  </div>
+
+                  <div class="para">
+                      <p>Rocklands is found in the Cederberg mountains 250km/3 hours north of Cape Town. It is a very beautiful area in a semi-desert setting, very isolated and very safe. Rocklands is undoubtedly famous for it's world class bouldering but this should not deter you from sampling the fine sport climbing. There is a large variety of quality climbing of all grades in both bouldering and sport climbing. All the sport routes are single pitch and you will have to do a small amount of walking to get to the different areas. Most of the original climbing is situated on CapeNature land and thus day or week permits must be obtained. Permits for bouldering are not covered by Wild Cards. Many of the newer areas being developed are on private farms some which have small (30-40 rand) day fees. The rock is a fine grain sandstone of medium hardness, excellent for climbing on due to its varied features. It is quite rough so you will surely need to plan rest days to re-grow some skin.</p>
+
+                      <h4>Directions</h4>
+
+                      <p>From Cape Town, get onto the N1 towards Paarl, take the N7 turnoff towards Malmesbury. Follow the N7 north for roughly 200km, eventually you come across a large dam after which you take the R364 turnoff towards Clanwilliam. Turn right at the T-junction and continue straight passed the town and up a small pass reaching a dirt road which is followed for about 16km until you hit another tar road. This is followed to the top off the pass where you'll spot a dirt road on the right. Park here and walk...</p>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d105864.81742892816!2d18.4328926869632!3d-33.985455547863076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srocklands+climbing!5e0!3m2!1sen!2sza!4v1505561205125" id="maps"></iframe>
+                    </div>
+                </div>
+                <div class="articles">
+                  <div class="Pimgs">
+                    <h4>MONTAGU</h4>
+                    <img src="Images\MYC17-01-nx9qbxkwkzl83hl5339udhlc.jpg" alt="climbing" id="imgH">
+                  </div>
+
+                  <div class="para">
+                      <p>Montagu is recognised as one of the most outstanding climbing destinations in South Africa due to the quality and number of climbing routes available.  Montagu’s rock walls offer a wide variety of high quality climbing opportunities at every level from beginner to expert.  The small town of Montagu is situated in the Klein Karoo (semi desert region) on the east side of the Langeberg mountain range 2 hours / 200km drive east of Cape Town.</p>
+
+                      <h4>Directions</h4>
+
+                      <p>You have the choice of taking the N1 Huguenot Tunnel (toll is ever increasing and since June 2014 is R30.00 or driving over the Du Toits Kloof Pass which is very scenic and recommendable in good weather.
+                        Drive on the N1 till Worcester, Turn right onto the Robertson Rd (R60). Continue on through Robertson onto the R62 through Ashton on to Montagu via the Cogmans Kloof Pass.
+                        Be aware that the local traffic cops have been trapping in the towns (60km zones) and sometimes in the kloof before Montagu.</p>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d106108.96708778967!2d20.03732736747218!3d-33.78894561341274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1dd245de263a7d77%3A0x355cff19637b33cb!2sMontagu+Climbing%2C+6720+south%2C+45+Mount+St%2C+Montagu%2C+6720!3m2!1d-33.788965399999995!2d20.1073675!5e0!3m2!1sen!2sza!4v1505561743389" id="maps"></iframe>
+                    </div>
+                </div>
+          </div>
+
+            <a name="Camp1"></a>
+            <h3>Camping</h3>
+          <div class="places">
+
+                <div class="articles">
+                    <div class="Pimgs">
+                      <h4>Tweede toll</h4>
+                      <img src="Images\download.jpg" alt="Sign" width="100%" height="350px" align="center" margin-left="30px">
+                    </div>
+
+                    <div class="para">
+                        <p>There are 20 standard campsites, each with its own braai area.  Hot and cold water ablutions are available, as well as firewood, a public telephone and a jungle gym. There are also six fenced off private campsites, each with its own kitchenette, shower and toilet, for those who value their privacy.
+
+                          There is a maximum of six people allowed per campsite. Campsite arrival time is between 14h00 and 18h00 (20h00 on Fridays) and departure time is 10h00. Late arrivals will need to notify the camp manager on (023) 355 1607. Bathroom lights stay on until 10pm. Overnight camping rates exclude conservation fees and campers have exclusive use of the Wolwekloof River swimming holes. On departure at 10am, campers may pay the conservation day fee and move to the picnic area. </p>
+
+                        <h4>Directions</h4>
+
+                        <p>From Cape Town, take the Klapmuts/Wellington turn-off on the N1.
+                          Turn left and continue for 20km until you reach Wellington. At the
+                          third set of robots, turn left into Piet Retief Street, then right at the
+                          next set of robots into Church Street. This leads onto Bainskloof
+                          Pass heading towards Worcester. Tweede Tol is approximately
+                          16km from the Bainskloof Pass sign outside Wellington, on the left.
+                          Take care as the road through the pass is narrow and potentially
+                          dangerous./p>
+                      </div>
+                </div>
+
+          </div>
+
+            <a name="Fish1"></a>
+            <h3>Fishing</h3>
+          <div class="places">
+
+                <div class="articles">
+                    <div class="Pimgs">
+                      <h4>TULBAGH</h4>
+                      <img src="Images\WC Witels 2.jpg" alt="guy fishing" id="imgH">
+                    </div>
+
+                    <div class="para">
+                        <p>The Witels is a mysterious river that runs through the southwestern side of the Hex River Mountains and joins the Dwars River that comes in from Ceres side to form the Breede River in Mitchell’s Pass. It is not a CPS river but the entire upper section is controlled by the University of Cape Town (UCT) Mountain & Ski Club and no fishing is allowed. The lower reaches flow through Ceres Municipal property and a state permit and Western Cape fishing license are required to fish this area. It is a brown trout fishery with sly trout that become more and more wary as the season progresses. The bigger fish hang around in the lower-to-middle valley and can even be found in the top section of the Breede River in the early season.</p>
+
+                        <h4>Directions</h4>
+
+                        <p>The charming town of Tulbagh is situated in the Cape Winelands region - a drive of an hour and a half from Cape Town. It finds its place on the tourist map at the far north-western end of the popular Route 62, said to be the longest wine route in the world.</p>
+
+                        <h5><em>there are many other fishing spots in the area</em></h5>
+                      </div>
+                </div>
+
+                <div class="articles">
+                  <div class="Pimgs">
+                    <h4>Eastern cape</h4>
+                    <img src="Images\WC Witels 2.jpg" alt="guy fishing" id="imgH">
+                  </div>
+
+                  <div class="para">
+                      <p>The Witels is a mysterious river that runs through the southwestern side of the Hex River Mountains and joins the Dwars River that comes in from Ceres side to form the Breede River in Mitchell’s Pass. It is not a CPS river but the entire upper section is controlled by the University of Cape Town (UCT) Mountain & Ski Club and no fishing is allowed. The lower reaches flow through Ceres Municipal property and a state permit and Western Cape fishing license are required to fish this area. It is a brown trout fishery with sly trout that become more and more wary as the season progresses. The bigger fish hang around in the lower-to-middle valley and can even be found in the top section of the Breede River in the early season.</p>
+
+                      <h4>Directions</h4>
+
+                      <p>The charming town of Tulbagh is situated in the Cape Winelands region - a drive of an hour and a half from Cape Town. It finds its place on the tourist map at the far north-western end of the popular Route 62, said to be the longest wine route in the world.</p>
+
+                      <h5><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d42743.064184531744!2d27.702713!3d-32.979292!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1505557411359" width="500px" height="300px"></iframe></h5>
+                    </div>
+                </div>
+          </div>
+
+        </section>
+
+<!-- footer with links to social media of client -->
+      <footer>
+          spmkcms;dkm;sm;
+
+      </footer>
+<!-- ends -->
+</div>
+<!-- Main grid ends here-->
+  </body></a>
+</html>

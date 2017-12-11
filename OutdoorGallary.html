@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OutdoorGallary</title>
+    <link rel="stylesheet" type="text/css" href="Outdoor.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Oswald|Anton|Passion+One" rel="stylesheet">
+    <style>
+/*gallary main grid displayed with 2 columns and rows with a gap*/
+      .Grid2{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-gap: 2vw;
+      }
+/*ends*/
+
+/*body given a margin on all side to comprase content more to the center*/
+      body{
+        margin: 10px 15px;
+      }
+/*ends*/
+
+/*height given a width to fit the grid*/
+      header{
+        width: 100%;
+      }
+/*ends*/
+
+/*h2 placed in center with a underliner and a color, downloaded font also entered and letters also spaced out*/
+      h2{
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(76, 247, 162);
+        font-family: 'Anton', sans-serif;
+         letter-spacing: 2px;
+      }
+/*ends*/
+
+/*images placed in grid with 2 columns and rows with a gap and margin on all sides*/
+      .hcfc{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1vw;
+        margin: 10px 15px;
+      }
+/*ends*/
+
+/*images given a width, height and a solid black border, edges of border smoothed out to remove sharp ends and blur effect added and rotation*/
+      .img > #Gimgs{
+        width: 250px;
+        height: 250px;
+        border: 2px solid black;
+        border-radius: 40%;
+        position: relative;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+        transition: .3s ease-in-out;
+        -webkit-transition: .3s ease-in-out;
+        -webkit-transform: rotate(5deg) scale(1.0);
+        transform: rotate(5deg) scale(1.1);
+      }
+/*ends*/
+
+
+      #Gimgs:hover {
+      	-webkit-filter: blur(0);
+      	filter: blur(0);
+        -webkit-transform: rotate(0) scale(1);
+         1=transform: rotate(0) scale(1);
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- nav bar placed within header styling done on external css sheet-->
+          <header>
+            <h1>a World yet to be explored</h1>
+            <nav  id="mainNav">
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="OutdoorGallary.html">Gallary</a></li>
+              <li><a href="OutdoorContact.html">Contact</a></li>
+            </nav>
+          </header>
+    <!-- ends here -->
+<div class="Grid2">
+
+  <div class="cover">
+    <h2>HIKING</h2>
+    <div class="hcfc">
+        <div class="img"><img src="http://hikingcapetown.co.za/wp-content/uploads/2011/07/IMG_5449.jpg" alt="waterfall" id="Gimgs"></div>
+        <div class="img"><img src="http://www.ridgwayramblers.co.za/wp-content/uploads/2015/01/albina-and-alec-3.jpg" alt="waterfall" id="Gimgs"></div>
+        <div class="img"><img src="https://d1ljaggyrdca1l.cloudfront.net/wp-content/uploads/2017/04/hike-table-mountain.jpg" alt="Finished" id="Gimgs"></div>
+        <div class="img"><img src="http://www.travelstart.co.za/blog/wp-content/uploads/2016/05/india-venster.jpeg" alt="MountainTrail" id="Gimgs"></div>
+    </div>
+  </div>
+
+  <div class="cover">
+    <h2>CLIMBING</h2>
+    <div class="hcfc">
+        <div class="img"><img src="https://www.nightjartravel.com/sites/default/files/styles/gallery_image_large/public/images-gallery/Rock%20climbing%20Cape%20Town%2002.jpg?itok=dBHrvuo7" alt="hanging man" id="Gimgs"></div>
+        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYzEsbH0emC76X5VoKT4RZaGxRWot2UjQg5WrW1z86LjsiZubw" alt="Routes" id="Gimgs"></div>
+        <div class="img"><img src="https://media-cdn.tripadvisor.com/media/photo-s/06/40/29/d5/hike-table-mountain.jpg" alt="climbing between rocks" id="Gimgs"></div>
+        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAoCjJ0BpMXFPsKTmWP6VtGbn8jj1GHQEcjKi1z82-Kwn_UYWX" alt="Friends climbing" id="Gimgs"></div>
+    </div>
+  </div>
+
+
+  <div class="cover">
+    <h2>CAMPING</h2>
+    <div class="hcfc">
+        <div class="img"><img src="http://www.capetownmagazine.com/media_lib/preview/04ce7e5405ee40af4ce94351aad89b3e.preview.jpg" alt="family camping" id="Gimgs"></div>
+        <div class="img"><img src="http://www.anchalblogs.com/wp-content/uploads/2016/07/6-3.jpg" alt="Friends camping" id="Gimgs"></div>
+        <div class="img"><img src="http://www.aukwatowatours.co.za/wp-content/uploads/9.jpg" alt="long shoot of campers" id="Gimgs"></div>
+        <div class="img"><img src="https://insideguide.co.za/app/uploads/sites/2/2016/11/camping-sites-bontebok.jpg" alt="glow tenat" id="Gimgs"></div>
+    </div>
+  </div>
+
+  <div class="cover">
+    <h2>FISHING</h2>
+    <div class="hcfc">
+        <div class="img"><img src="Images\WC Witels 2.jpg" alt="fish" id="Gimgs"></div>
+        <div class="img"><img src="http://www.town.co.za/capetown/wp-content/uploads/2016/11/Fishing-in-Cape-Town.jpg" alt="family" id="Gimgs"></div>
+        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQixjcjwGoOGLnozQZS45tWJSpsbwtQ0J6xHD86eQQzs7tprc-vpA" alt="family" id="Gimgs"></div>
+        <div class="img"><img src="https://media-cdn.tripadvisor.com/media/photo-s/07/fa/65/76/field-stream.jpg" alt="family" id="Gimgs"></div>
+
+    </div>
+  </div>
+
+</div>
+
+  </body>
+</html>
